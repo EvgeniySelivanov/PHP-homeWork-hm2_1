@@ -25,10 +25,10 @@
 let radio= "<?=$radio?>";
 console.log(radio);
 
+const ctx = document.getElementById('myChart').getContext('2d');
 if(radio==1){
 
 
-const ctx = document.getElementById('myChart').getContext('2d');
 let first= "<?=$first?>";
 let second= "<?=$second?>";
 let third= "<?=$third?>";
@@ -67,9 +67,16 @@ const myChart = new Chart(ctx, {
     }
 });
  }
- else{
+
+
+
+else{
+
+    
      document.write('next diagram');
      console.log('alarm');
+
+
  }
 
 </script>
